@@ -1,0 +1,150 @@
+/*CONTEUDO*/
+#conteudo
+{
+    /*position: relative;*/
+}
+/* TIME */
+.page-section {
+    padding: 6rem 0;
+  }
+  .page-section h2.section-heading {
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #FBAFBD;
+    font-weight: bold;
+    
+  }
+  .page-section h3.section-subheading {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 4rem;
+  }
+  .team-member {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .team-member img {
+    width: 12rem;
+    height: 12rem;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+  }
+  .team-member h4 {
+    margin-top: 1.5rem;
+    color: #FBAFBD;
+    margin-bottom: 0;
+  }
+  .btn-social {
+    height: 2.5rem;
+    width: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 100%;
+  }  
+  .text-muted {
+    color: #FBAFBD !important;
+    font-weight: bold;
+  }
+
+/* WHATSAPP*/
+#sec_wtsapp{
+    position:absolute;
+    bottom:0;
+    right:0;
+    margin-right: 20px;
+}
+.spn_wtsapp{
+    color: #34af23 ;
+}
+.whatsapp-default:hover .spn_wtsapp{
+    color:  #FBAFBD ;   
+}
+/* INSTAGRAM */
+  #instagram .owl-carousel .item
+  {
+    height: 10rem;
+    background-color: cyan;
+    padding: 1rem;
+  }
+/*CONTATO*/
+
+        #sec_contato 
+        {
+            background: #F7EDEE; 
+        }
+        #sec_contato iframe 
+        {
+          height: 75%;
+          width: 75%; 
+        }
+       #sec_contato .contact-form
+       {
+            border-radius: 25px;
+            padding: 35px;
+            background-color: #fff;
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 380px;
+            margin: 117px auto;
+       }
+       #sec_contato .contact-form h3
+       {
+            color: #FBAFBD;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 20px; 
+       }
+       #sec_contato .contact-form .form-control
+       {
+            margin-bottom: 20px;
+            border: none;
+            background-color: #ebd8df;
+            border-radius: 25px;
+            font-size: 15px;
+            padding: 10px 10px; 
+       }
+       #sec_contato .contact-form ::-webkit-input-placeholder
+       {
+            color: #928f8f; 
+       }
+       #sec_contato .contact-form textarea 
+       {
+        height: 203px;
+        resize: none;
+        padding-top: 20px !important;
+       }
+       #sec_contato .contact-form button 
+       {
+        background: #FBAFBD;
+        width: 140px;
+        padding: 13px 0;
+        font-size: 15px;
+        color: #fff;
+        border: none;
+        border-radius: 40px;
+        margin: 0 auto;
+        display: block;
+        cursor: pointer;
+       }
+       #sec_contato .contact-form button:hover, footer .contact-form button:visited
+       {
+          background: #FBAFBD; 
+       }
+      @media (max-width: 1199px) 
+      {
+        #sec_contato .contact-form
+        {
+          margin: 50px auto; 
+        }
+      }
+      @media (max-width: 767px) 
+      {
+        #sec_contato .map
+        {
+          min-height: 300px; 
+        }
+      } 

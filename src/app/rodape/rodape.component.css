@@ -1,0 +1,27 @@
+/*RODAPE */
+footer
+{
+    background-color: #F7EDEE;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+footer h4
+{
+    color: #919496;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+footer .navbar-nav a
+{
+    color: white;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+footer .navbar-nav a:hover
+{
+    color: #9bf0e1;
+}
+footer ul li 
+{
+    margin: 0 5px;
+}

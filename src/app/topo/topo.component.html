@@ -1,0 +1,102 @@
+<header><!--Inicio Cabeçalho-->
+    <div class="block">
+      <div class="background">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade sobrescrever w-100" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item {{carousel.ativo}} " *ngFor="let carousel of carousels">
+              <img src="{{carousel.caminho}}"
+               class="d-block w-100 img-fluid" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <p>{{carousel.tipo}}</p>
+                  <strong><a href="">{{carousel.descricao}}</a></strong>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="foreground">
+        <nav class="navbar navbar-expand-md navbar-light navbar-transparent sobrescrever w-100">
+          <div class="container">
+              <a class="navbar-brand" href="#">
+                  <img  id="logo" src="../../assets/imagens/logo.png" width="120" class="img-fluid">
+              </a>
+              <button class="navbar-toggler mr-3" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav" >
+                  <ul class="navbar-nav ml-auto" *ngFor="let menu of menus">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">{{menu.descrmenu}}</a>
+                      </li>
+                  </ul>
+                  <div *ngIf="redimensionar; else exibirBotaoLogin"></div>
+                </div>
+                <a class="login" href="#"  data-bs-toggle="modal" data-bs-target="#modalLogin">Area cliente</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header><!--Fim cabeçalho-->
+  <section><!--Inicio Seção Recentes-->
+        
+  </section><!--Fim Seçao Recentes-->
+  <section class="caixa"><!--Inicio Seção Serviços-->
+      <div class="container-fluid align-self-center">
+        <div class="row">
+          <div class="col-sm-4" *ngFor="let album of albuns">
+            <a href="">
+              <img  src="{{album.caminho}}" class="photo img-fluid rounded d-sm-block">
+              <div class="overlay">
+                <div class="text">
+                  <h4 class="fw-bold">{{album.descricao}}</h4>
+                    <h6>{{album.tipo}}</h6>
+                      <span class="cst__item cst__item-views"><i class="fa fa-eye"></i><span class="album_views_update">41</span></span> 
+                      <span class="cst__item cst__item-likes"><i class="fa fa-heart"></i><span class="album_likes_update">11</span></span>
+                </div>
+              </div>
+            </a>
+           </div>
+          </div>
+      </div>
+  </section><!--Fim Seção Serviços-->
+  <ng-template #exibirBotaoLogin><!--INICIO TEMPLATE BOTÃO LOGIN-->
+    <div class="row">
+        <button id="btnLogin" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalLogin">Area cliente</button>
+    </div>
+  </ng-template><!--FIM TEMPLATE BOTÃO LOGIN-->
+  <!-- INICIO MODAL LOGIN -->
+  <div class="modal" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title w-100 text-center">Area Cliente</h5>
+          <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+            <i id="btn-close" class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="input-group">
+            <i class="fas fa-key input-group-text" id="icon_email"></i>
+            <input type="text" class="form-control" placeholder="Digite seu email" aria-describedby="icon_email">
+          </div>
+          <div class="input-group">
+            <i class="fas fa-lock input-group-text" id="icon_senha"></i>
+            <input type="text" class="form-control" placeholder="Digite sua senha" aria-describedby="icon_senha">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="row w-100">
+            <div class="col-6">
+              <button type="button" class="btn btn-outline-primary w-100" data-bs-dismiss="modal">Cancelar</button>
+            </div>
+            <div class="col-6">
+              <button type="button" class="btn btn-outline-primary w-100">Logar</button>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--FIM MODAL LOGIN-->

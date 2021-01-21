@@ -1,1 +1,93 @@
-/* You can add global styles to this file, and also import other style files */
+/******PALETA DE CORES QUE COMBINA COM O LOGO*******
+    #FBAFBD ROSA LAVANDA
+    #989C9E OSLO GREY
+    #F7EDEE DARK PINK
+    #FAD3DC AZALEA
+
+*/
+/*Adicionando fonte*/
+@font-face{ 
+    /*Caso a fonte esteja na pasta anterior*/
+     font-family: "MontserratThin";
+     src: url("assets/fonts/montserrat-thin.ttf");
+}
+@font-face{ 
+    /*Caso a fonte esteja na pasta anterior*/
+     font-family: "RobotoCondensedLight";
+     src: url("assets/fonts/RobotoCondensed-Light.ttf");
+}
+html,body,#home
+{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-attachment: fixed;
+    /* overflow-x: hidden; deixa a barra vertical oculta*/
+}
+/*ESTRUTURA CARROSEL*/
+.sobrescrever
+{
+  position: relative;
+  clear: both;
+  margin: 0 auto;
+  width: 50%; 
+  text-align:center
+}
+.carousel-caption
+{
+    bottom: 50%;
+}
+.carousel-caption strong,
+.carousel-caption p
+{
+    line-height: 1em;
+}
+.carousel-caption strong
+{
+    font-family: 'MontserratThin';
+    letter-spacing: 0px;
+    font-size: 76px;
+}
+.carousel-caption p
+{
+    font-size: 19px;
+    letter-spacing: 2.1px;
+    font-family: 'RobotoCondensedLight';
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+/*
+Tipografia
+*/
+a
+{
+    
+    color: white;
+    font-family: 'MontserratThin';
+}
+a:hover
+{
+    text-decoration: none;
+    color: #FBAFBD;
+}
+h1{
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: white;
+    font-family: 'MontserratThin';
+}
+h2{
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    font-family: 'MontserratThin';
+}
+h3{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    font-family: 'MontserratThin';
+}

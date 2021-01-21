@@ -1,0 +1,202 @@
+/*
+Tipografia
+*/
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(251, 175, 189, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+a
+{
+    text-decoration: none;
+    color: white;
+    font-family: 'MontserratThin';
+}
+a:hover
+{
+    text-decoration: none;
+    color: #566573;
+}
+h1{
+    
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: white;
+    font-family: 'MontserratThin';
+}
+h2{
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    font-family: 'MontserratThin';
+}
+h3{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    font-family: 'MontserratThin';
+}
+/*Estrutura Conteudos*/
+.overlay 
+{
+    opacity: 0;
+    transition: .8s ease;
+    background-color:rgba(0,0,0,0.4);
+    position: absolute;
+}
+  .col-sm-4:hover .overlay {
+    opacity: 5;
+  } 
+  .text 
+  {
+    transform:translate(100%,-100%) ;
+    width: 100%;
+    padding-left: 2px;
+    z-index: 12;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  } 
+.col-sm-4
+{
+    padding-left: 1px;
+    padding-right: 1px;  
+}
+.caixa{
+    position: relative;
+    z-index: 5;
+}
+
+
+
+/***INICIO**************HEADER**********ESTRUTURA*/
+.block {
+    position:relative; 
+}
+.block .background{
+   width: 100%;
+   
+}
+.block .foreground {
+    position:absolute;
+    top:0;
+    z-index: 10;
+    width: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.navbar-light
+{
+    background-color: rgba(10,23,55,0.3);
+} 
+.navbar-light .navbar-nav .nav-link,.login { 
+    color: #FBAFBD;
+    font-weight: bold;
+    display:inline-block;
+    margin:0;
+    font-size: 16px;
+    letter-spacing: 2.9px;
+}
+.navbar-light .navbar-nav .nav-link:after,.login:after {
+  display:block;
+  content: '';
+  border-bottom: solid 0.5px white;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover,.login:hover{
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link:hover:after,.login:hover:after { 
+    transform: scaleX(1); }
+.navbar-light .navbar-nav .nav-link.fromRight:after,.login:hover:after{ transform-origin:100% 50%; }
+.navbar-light .navbar-nav .nav-link.fromLeft:after,.login:hover:after{  transform-origin:  0% 50%; }
+.navbar-light .navbar-toggler 
+{
+    color: #FBAFBD;
+    border: none;
+}
+/***FIM**************HEADER**********ESTRUTURA*/
+
+/*Capa*/
+.capa
+{
+   text-align: center;
+}
+/*MODAL LOGIN*/
+#modalLogin .modal-dialog .modal-content
+{
+    border-radius: 20px;
+    background-color: white;    
+}
+.modal-title
+{
+    color: #FBAFBD;
+}
+#btn-close,.btn-outline-primary
+{
+    color: #FBAFBD;
+}
+.form-control,.input-group-text
+       {    
+            margin-bottom: 20px;
+            border: none;
+            background-color: #ebd8df;
+            border-radius: 25px;
+            font-size: 15px;
+            padding: 10px 10px; 
+            color: #FBAFBD;
+       }
+       .btn-outline-primary
+       {
+           border: 1px solid #FBAFBD;
+           border-radius: 15px;
+       }
+       .btn-outline-primary:hover
+       {
+           background-color: #FBAFBD;
+           color: white;
+       }
+/**/
+
+/* Extra small devices (portrait phones, less than 576px)*/
+    @media (max-width: 575.98px) 
+    {
+        .login
+        {
+            display: none;
+        }        
+        .overlay 
+        {
+            border: 1px solid pink;
+            opacity: 0;
+            transition: none;
+            background-color: white;
+        }
+        .text 
+        {
+            clear: both;
+        } 
+        .navbar-light{
+            z-index: 11;
+            position: absolute;
+        }  
+    }
+    /* Small devices (landscape phones, less than 768px)*/
+    @media (max-width: 770px) { 
+        .login
+        {
+            display: none;
+        }
+
+     }
+
+    /* Medium devices (tablets, less than 992px) */
+    @media (max-width: 991.98px) {  }
+
+    /* Large devices (desktops, less than 1200px) */
+    @media (max-width: 1199.98px) {  }
+
+    /* X-Large devices (large desktops, less than 1400px) */
+    @media (max-width: 1399.98px) {  }
