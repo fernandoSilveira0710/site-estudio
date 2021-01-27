@@ -91,3 +91,5 @@ h3{
     letter-spacing: -0.04em;
     font-family: 'MontserratThin';
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -40,11 +40,13 @@
   <section><!--Inicio Seção Recentes-->
         
   </section><!--Fim Seçao Recentes-->
+  
   <section class="caixa"><!--Inicio Seção Serviços-->
+  <!--
       <div class="container-fluid align-self-center">
         <div class="row">
           <div class="col-sm-4" *ngFor="let album of albuns">
-            <a href="">
+            <a href="" class="linkrecent">
               <img  src="{{album.caminho}}" class="photo img-fluid rounded d-sm-block">
               <div class="overlay">
                 <div class="text">
@@ -58,6 +60,20 @@
            </div>
           </div>
       </div>
+    -->
+    <div class="container-fluid align-self-center">
+      <div class="row">
+        <div id="recents" class="col-sm-4" *ngFor="let album of albuns">
+            <img  src="{{album.caminho}}" class="img-fluid rounded d-sm-block">
+              <div class="text">
+                <h4 class="fw-bold">{{album.descricao}}</h4>
+                  <h6>{{album.tipo}}</h6>
+                    <span><i class="fa fa-eye"></i><span>41</span></span> 
+                    <span><i class="fa fa-heart"></i><span>11</span></span>
+              </div>
+         </div>
+        </div>
+    </div>
   </section><!--Fim Seção Serviços-->
   <ng-template #exibirBotaoLogin><!--INICIO TEMPLATE BOTÃO LOGIN-->
     <div class="row">
