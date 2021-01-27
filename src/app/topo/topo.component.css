@@ -53,10 +53,30 @@ h3{
 }
 .text{
     text-align: center;
-    border:1px solid green;
+    top: 25%;
     position: absolute;
     width: 100%;
     transform:translateY(50%) ;
+    display: none;
+}
+#recents:hover .text
+{
+ display: inline;
+ color: white;
+}
+.descricao,.tipo
+{
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    font-family: 'MontserratThin';
+}
+.descricao
+{
+    font-size: 1.8em;
+}
+.tipo
+{
+    font-size: 1em;
 }
 
 
@@ -188,6 +208,11 @@ h3{
             display: none;
         }
 
+        .text
+        {
+            display: inline;
+            color: white;
+        }
      }
 
     /* Medium devices (tablets, less than 992px) */
