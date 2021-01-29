@@ -1,73 +1,31 @@
 <footer id="rodape"><!--Inicio Seção Rodapé-->
     <div class="container">
         <div class="row">
-            <div class="col-md-2">
-                <img src="../../assets/imagens/logo.png" width="142" class="img-fluid ml-3 mr-3">
+            <div class="col-sm-2">
+                <img src="../../assets/imagens/logo.png" width="120" class="img-fluid ml-3 mr-3">
             </div>
-            <div class="col-md-2">
-                <h4>Company</h4>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">Empregos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">Imprensa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">Novidades</a>
-                    </li>
-                </ul>
+            <div class="col-sm-6">
+                <nav class="navbar navbar-expand-sm navbar-light navbar-transparent w-auto mt-3">
+                    <div class="{{redimensionar}}">
+                        <ul class="navbar-nav" *ngFor="let menu of menus">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">{{menu.descrmenu}}</a>
+                              </li>
+                          </ul>
+                    </div>
+                  </nav>
             </div>
-            <div class="col-md-2">
-                <h4>Comunidade</h4>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="">Artistas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">Desnvolvedores</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">Marcas</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-2">
-                <h4>Link Uteis</h4>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="">Ajuda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">Presentes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">Player da web</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a href="">
-                            <img src="imagens/facebook.png" alt="">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">
-                            <img src="imagens/instagram.png" alt="">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">
-                            <img src="imagens/twitter.png" alt="">
-                        </a>
-                    </li>
-                    
-                </ul>
+            <div class="col-sm-4 container-fluid align-self-center">
+                <p>Siga-nos nas redes sociais</p> 
+                <a class="icons" href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="icons" href="#">
+                    <i class="fab fa-facebook-square"></i>
+                </a> 
+                <a class="icons" href="#">
+                    <i class="fab fa-pinterest-square"></i> 
+                </a>
             </div>
         </div>
     </div>

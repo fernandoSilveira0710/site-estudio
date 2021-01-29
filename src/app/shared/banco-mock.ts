@@ -1,5 +1,6 @@
 import { Carousel } from "./carousel.model";
 import { Menu } from "./menu.model";
+import { Usuario } from "./usuario.model";
 /* BANCO TOPO */
 export const CAROUSEL:Carousel[] =
 [
@@ -47,3 +48,13 @@ export const MENU:Menu[] =
 /* INICIO BANCO CONTEUDO */
 export const TELEFONE:string = "5515981285755"
 /* FIM BANCO CONTEUDO */
+
+/* INICIO BANCO LOGIN CLIENTE */
+export const LOGIN:Usuario[] =
+[
+    new Usuario("admin","user@user.com","(00)00000000","admin"),
+    new Usuario("Fernando","fernando@email.com","(15)981294904","Feeh@1993"),
+    new Usuario("Luana","luana@email.com","(15)99815949","123")
+]
+
+/* FIM BANCO LOGIN CLIENTE */

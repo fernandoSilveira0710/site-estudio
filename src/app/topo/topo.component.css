@@ -58,11 +58,13 @@ h3{
     width: 100%;
     transform:translateY(50%) ;
     display: none;
+   
 }
 #recents:hover .text
 {
  display: inline;
  color: white;
+
 }
 .descricao,.tipo
 {
@@ -101,7 +103,7 @@ h3{
 }
 .navbar-light
 {
-    background-color: rgba(10,23,55,0.3);
+    /*background-color: rgba(10,23,55,0.3);*/
 } 
 .navbar-light .navbar-nav .nav-link,.login { 
     color: #FBAFBD;

@@ -15,7 +15,11 @@ export class TopoComponent implements OnInit,OnChanges {
   public redimensionar:boolean = true
   public innerWidth: any;
 
-  constructor() { }
+  public email:string = ""
+
+  constructor() {
+    console.log(this.email)
+   }
   ngOnChanges(changes: SimpleChanges): void 
   {
     console.log("modificou");
@@ -28,8 +32,12 @@ export class TopoComponent implements OnInit,OnChanges {
   onResize() {
     this.verificaResize(window.innerWidth)
   }
-  
-  
+    //(<HTMLInputElement>texto.target).value RETORNA O TEXTO CONTIDO DENTRO DO TEXTAREA
+  public exibirTexto(texto:Event):void
+  {
+    this.email = (<HTMLInputElement>texto.target).value
+    console.log(this.email)
+  }
   public verificaResize(size:number) 
   {
     console.log(size)

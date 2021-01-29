@@ -1,27 +1,53 @@
 /*RODAPE */
-footer
-{
-    background-color: #F7EDEE;
-    padding: 50px 0px 20px 0px;
-    position: relative;
-}
-footer h4
+h1
 {
     color: #919496;
-    font-size: 0.8em;
-    text-transform: uppercase;
+    font-size: 1em;
 }
-footer .navbar-nav a
+p{
+    color: #FBAFBD;
+    font-size: 1.2em;
+}
+footer
 {
+    background-color: #566573;
+}
+
+.navbar-light .navbar-nav .nav-link,.login { 
+    color: #FBAFBD;
+    font-weight: bold;
+    display:inline-block;
+    margin:0;
+    font-size: 0.9em;
+    letter-spacing: 2.9px;
+}
+.navbar-light .navbar-nav .nav-link:after,.login:after {
+  display:block;
+  content: '';
+  border-bottom: solid 0.5px white;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover,.login:hover{
     color: white;
-    font-size: 0.8em;
-    text-decoration: none;
 }
-footer .navbar-nav a:hover
+
+.icons
 {
-    color: #9bf0e1;
+    
+    font-size: 1.3em; 
+    color: #FBAFBD;
+    padding: 2px;
+    text-align: center;
 }
-footer ul li 
+.icons:hover
 {
-    margin: 0 5px;
+    color: #919496;
+    font-size: 1.5em; 
 }
+
+ /* Small devices (landscape phones, less than 768px)*/
+ @media (max-width: 998px) { 
+    
+ }
+
